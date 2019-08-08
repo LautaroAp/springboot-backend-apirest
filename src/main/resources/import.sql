@@ -1,0 +1,20 @@
+INSERT INTO regiones (id, nombre) VALUES (1, 'Nortramerica');
+INSERT INTO regiones (id, nombre) VALUES (2, 'Centramerica');
+INSERT INTO regiones (id, nombre) VALUES (3, 'Sudamerica');
+INSERT INTO regiones (id, nombre) VALUES (4, 'Europa');
+INSERT INTO regiones (id, nombre) VALUES (5, 'Asia');
+INSERT INTO regiones (id, nombre) VALUES (6, 'Africa');
+INSERT INTO regiones (id, nombre) VALUES (7, 'Oceania');
+INSERT INTO regiones (id, nombre) VALUES (8, 'Antartida');
+
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (1, 'Doeh', '2018-01-01', 'john@doe.com', 'John');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (1, 'Baggins', '2018-01-01', 'bilbo@baggins.com', 'Bilbo');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (1, 'Baggins', '2018-01-01', 'fridi@baggins.com', 'Frodo');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (1, 'Tukk', '2018-01-01', 'pipin@tukk.com', 'Pipin');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (1, 'Tukk', '2018-01-01', 'merry@tukk.com', 'Merry');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (6, 'Gangli', '2018-01-01', 'samm@gangli.com', 'Samm');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (6, 'The Gray', '2018-01-01', 'gandalf@thegray.com', 'Gandalf');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (6, 'The White', '2018-01-01', 'saruman@thewhite.com', 'Saruman');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (7, 'Human', '2018-01-01', 'aragorn@human.com', 'Aragorn');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (7, 'Elfh', '2018-01-01', 'legolas@elf.com', 'Legolas');
+INSERT INTO `clientes` (`region_id`, `apellido`, `create_at`, `email`, `nombre`) VALUES (7, 'Dwarf', '2018-01-01', 'gimli@dwarf.com', 'Gimli');
