@@ -13,15 +13,13 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-/* Clases en Mayúscula y Singular, Tablas en Minúscula y Plural */
-
 @Entity
 @Table(name = "usuarios")
 public class Usuario implements Serializable {
 
-	// =============================================================
-	// Atributos
-	// =============================================================
+	// =================================================================
+	// ATRIBUTOS
+	// =================================================================
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,19 +32,21 @@ public class Usuario implements Serializable {
 	private String password;
 
 	private Boolean enabled;
+	
+	private String nombre;
+	private String apellido;
+	
+	@Column(unique = true)
+	private String email;
 
-	/*
-	 * "cascade" crea/elimina autimaticamente de roles tambien crea tabla intermedia
-	 * en tre "usuarios y roles"
-	 */
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<Role> roles;
 
 	private static final long serialVersionUID = 1L;
 
-	// =============================================================
-	// Metodos
-	// =============================================================
+	// =================================================================
+	// METODOS
+	// =================================================================
 
 	public Long getId() {
 		return id;
@@ -88,4 +88,28 @@ public class Usuario implements Serializable {
 		this.roles = roles;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 }
